@@ -233,7 +233,7 @@
   "#include<conio.h>",
   "int main()",
   "{",
-  //"declaring and initializing variables",
+  "//declaring and initializing variables",
     "int a = 1, b = 2, temp;",
     "cout << \"Before swapping.\" << endl;",
     "cout << \"a = \" << a << \", b = \" << b << endl;",
