@@ -427,7 +427,7 @@
          ]
       },
       {
-         "id":"11",
+         "id":"12",
          "nameOfTopic":" Find Factorial of a integer",
          "noOfLike":2,
          "noOfDisLike":2,
@@ -466,7 +466,7 @@
          ]
       },
       {
-         "id":"12",
+         "id":"13",
          "nameOfTopic":" Display Fibonacci series of an integer",
          "noOfLike":2,
          "noOfDisLike":2,
@@ -513,7 +513,7 @@
          ]
       },
       {
-         "id":"13",
+         "id":"14",
          "nameOfTopic":" LCM of two integer",
          "noOfLike":2,
          "noOfDisLike":2,
@@ -558,7 +558,7 @@
          ]
       },
       {
-         "id":"14",
+         "id":"15",
          "nameOfTopic":" Reversing an integer",
          "noOfLike":2,
          "noOfDisLike":2,
@@ -593,7 +593,7 @@
          ]
       },
       {
-         "id":"15",
+         "id":"16",
          "nameOfTopic":" Calculating power of an integer",
          "noOfLike":2,
          "noOfDisLike":2,
@@ -628,7 +628,7 @@
          ]
       },
       {
-         "id":"16",
+         "id":"17",
          "nameOfTopic":" Print ASCII value of a character",
          "noOfLike":2,
          "noOfDisLike":2,
@@ -657,7 +657,7 @@
          ]
       },
       {
-         "id":"17",
+         "id":"18",
          "nameOfTopic":" Find whether number is Palimdrome or not.",
          "noOfLike":2,
          "noOfDisLike":2,
@@ -702,7 +702,7 @@
          ]
       },
       {
-         "id":"18",
+         "id":"19",
          "nameOfTopic":" Find whether number is Armstrong or not.",
          "noOfLike":2,
          "noOfDisLike":2,
@@ -753,7 +753,7 @@
          ]
       },
       {
-         "id":"19",
+         "id":"20",
          "nameOfTopic":" Find factors of an integer",
          "noOfLike":2,
          "noOfDisLike":2,
@@ -792,7 +792,7 @@
          ]
       },
       {
-         "id":"20",
+         "id":"21",
          "nameOfTopic":"  Program to print Pascals triangle",
          "noOfLike":2,
          "noOfDisLike":2,
@@ -832,11 +832,11 @@
          "output":[
             "Enter the number of rows:",
             "6",
-            "1",
-            "1   1",
-            "1   2   1",
-            "1   3   3    1",
-            "1  4    6   4   1",
+                     "1",
+                   "1   1",
+                 "1   2   1",
+              "1   3   3    1",
+             "1  4    6   4   1",
             "1  5   10   10  5   1"
          ]
       }
