@@ -43,7 +43,7 @@
          "description":[
             "In this section we will cover the basics of C++, it will include the syntax, variable, operators, loop types, pointers, references and information about other requirements of a C++ program."
          ],
-         "imageUrl":"concept-2.jpg",
+         "imageUrl":"concept-3.jpg",
          "content":[
             "The syntax and structure of C++ program are :- ",
             "<b>Header files</b> - They are included at the beginning just like in C program. Here iostream is a header file which provides us with input & output streams. Header files contained predeclared function libraries, which can be used by users for their ease.",
@@ -62,7 +62,7 @@
          "description":[
             "Datatypes and Modifiers in C++ are used to define type of variables and contents used."
          ],
-         "imageUrl":"concept-2.jpg",
+         "imageUrl":"concept-4.jpg",
          "content":[
             "Data types define the way you use storage in the programs you write. Data types can be of two types: <p>1. Built-in Datatypes.</p><p>2. User-defined or Abstract Datatypes.</p>",
             "<b>Built-in Data Types</b> - These are the datatypes which are predefined and are wired directly into the compiler. For eg: int, char etc.",
@@ -81,7 +81,7 @@
          "description":[
             "Variable are used in C++, where we need storage for any value, which will change in program. Variable can be declared in multiple ways each with different memory requirements and functioning. Variable is the name of memory location allocated by the compiler depending upon the datatype of the variable."
          ],
-         "imageUrl":"concept-2.jpg",
+         "imageUrl":"concept-5.jpg",
          "content":[
             "<b>Basic types of Variables</b> - <p>Each variable while declaration must be given a datatype, on which the memory assigned to the variable depends. Following are the basic types of variables,</p><p><b>bool</b> => For variable to store boolean values( True or False )</p><p><b>char</b> => For variables to store character types.</p><p><b>int</b> => for variable with integral values.for variable with integral values</p><p><b>float & double</b> =>  Are also types for variables with large and floating point values.</p>",
             "<b>Declaration and Initialization</b> - Variable must be declared before they are used. Usually it is preferred to declare them at the starting of the program, but in C++ they can be declared in the middle of program too, but must be done before using them.",
@@ -99,7 +99,7 @@
          "description":[
             "Operators are special type of functions, that takes one or more arguments and produces a new value. For example : addition (+), substraction (-), multiplication (*) etc, are all operators. Operators are used to perform various operations on variables and constants."
          ],
-         "imageUrl":"concept-2.jpg",
+         "imageUrl":"concept-6.jpg",
          "content":[
             "Types of operators are as follows :- <p>1. Assignment Operator</p><p>2. Mathematical Operators</p><p>3. Relational Operators</p><p>4. Logical Operators</p><p>5. Bitwise Operators</p><p>6. Shift Operators</p><p>7. Unary Operators</p><p>8. Ternary Operator</p><p>9. Comma Operator</p>",
             "<b>Assignment Operator (=)</b> - Operates '=' is used for assignment, it takes the right-hand side (called rvalue) and copy it into the left-hand side (called lvalue). Assignment operator is the only operator which can be overloaded but cannot be inherited.",
@@ -121,7 +121,7 @@
          "description":[
             "In this tutorial we will cover the usage of sizeof and typedef operators in C++."
          ],
-         "imageUrl":"concept-2.jpg",
+         "imageUrl":"concept-7.jpg",
          "content":[
             "<b>sizeof Operator in C++</b> - <p>sizeof is also an operator not a function, it is used to get information about the amount of memory allocated for data types & Objects. It can be used to get size of user defined data types too.</p><p>sizeof operator can be used with and without parentheses. If you apply it to a variable you can use it without parentheses.</p><p>cout << sizeof(double);   //Will print size of double</p><p>int x = 2;</p><p>int i = sizeof x;</p>",
             "<b>typedef Operator in C++</b> - <p>typedef is a keyword used in C language to assign alternative names to existing types. Its mostly used with user defined data types, when names of data types get slightly complicated. Following is the general syntax for using typedef,</p><p>typedef existing_name alias_name</p><p>Lets take an example and see how typedef actually works.</p><p>typedef unsigned long ulong;</p><p>The above statement define a term ulong for an unsigned long type. Now this ulong identifier can be used to define unsigned long type variables.</p><p>ulong i, j;</p>"
@@ -135,7 +135,7 @@
          "description":[
             "Decision making is about deciding the order of execution of statements based on certain conditions or repeat a group of statements until certain specified conditions are met."
          ],
-         "imageUrl":"concept-2.jpg",
+         "imageUrl":"concept-8.jpg",
          "content":[
             "C++ handles decision-making by supporting the following statements.<p>* if statement</p><p>* switch statement</p><p>* conditional operator statement</p><p>* goto statement</p>",
             "<b>Decision making with if statement</b> - <p>The if statement may be implemented in different forms depending on the complexity of conditions to be tested. The different forms are,</p><p>1. Simple if statement</p><p>2. if....else statement</p><p>3. Nested if....else statement</p><p>4. else if statement</p>",
@@ -145,6 +145,58 @@
             "<b>else-if Ladder</b> - <p>The general form of else-if ladder is,</p><p>if(expression 1)</p><p>{</p><p>    statement-block1;</p><p>}</p><p>else if(expression 2) </p><p>{</p><p>    statement-block2;</p><p>}</p><p>else if(expression 3 ) </p><p>{</p><p>    statement-block3;</p><p>}</p><p>else </p><p>    default-statement;</p><p>The expression is tested from the top(of the ladder) downwards. As soon as the true condition is found, the statement associated with it is executed.</p><p>Example:</p><p>void main( )</p><p>{</p><p>    int a;</p><p>    cout << \"enter a number\";</p><p>    cin >> a;</p><p>    if( a%5==0 && a%8==0)</p><p>    {</p><p>        cout << \"divisible by both 5 and 8\";</p><p>    }</p><p>    else if( a%8==0 )</p><p>    {</p><p>        cout << \"divisible by 8\";</p><p>    }</p><p>    else if(a%5==0)</p><p>    {</p><p>        cout << \"divisible by 5\";</p><p>    }</p><p>    else </p><p>    {</p><p>        cout << \"divisible by none\";</p><p>    }</p><p>}</p><p>If you enter value 40 for the variable a, then the output will be:</p><p>Output :-</p><p>divisible by both 5 and 8</p>",
             "<b>Points to Remember</b> - <p>1. In if statement, a single statement can be included without enclosing it into curly braces { }.</p><p>int a = 5;</p><p>if(a > 4)</p><p>    cout << \"success\";</p><p>Output :-</p><p>success</p><p>No curly braces are required in the above case, but if we have more than one statement inside if condition, then we must enclose them inside curly braces otherwise only the first statement after the if condition will be considered.</p><p>int a = 2;</p><p>if(a > 4)</p><p>    cout << \"success\";</p><p>    // below statement is outside the if condition</p><p>    cout << \"Not inside the if condition\"</p><p>Output :-</p><p>Not inside the if condition</p><p>2. == must be used for comparison in the expression of if condition, if you use = the expression will always return true, because it performs assignment not comparison.</p><p>3. Other than 0(zero), all other positive numeric values are considered as true.</p><p>if(27)</p><p>cout << \"hello\";</p><p>hello</p>"
          ]
+      },
+	  {
+         "id":"9",
+         "nameOfTopic":"C++ Loops - while, for and do while loop",
+         "noOfLike":0,
+         "noOfDisLike":0,
+         "description":[
+            "In any programming language, loops are used to execute a set of statements repeatedly until a particular condition is satisfied."
+         ],
+         "imageUrl":"concept-9.jpg",
+         "content":[
+			"A sequence of statement is executed until a specified condition is true. This sequence of statement to be executed is kept inside the curly braces { } known as loop body. After every execution of loop body, condition is checked, and if it is found to be true the loop body is executed again. When condition check comes out to be false, the loop body will not be executed.",
+			"<b>There are 3 type of loops in C++ language</b> - <p>1. while loop</p><p>2. for loop</p><p>3. do-while loop</p>",
+			"<b>while loop</b> - <p>while loop can be address as an entry control loop. It is completed in 3 steps.</p><p>* Variable initialization.(e.g int x=0;)</p><p>* condition(e.g while( x<=10))</p><p>* Variable increment or decrement (x++ or x-- or x=x+2)</p><p>Syntax:</p><p>variable initialization;</p><p>while (condition)</p><p>{</p><p>    statements;</p><p>    variable increment or decrement; </p><p>}</p>",
+			"<b>for loop</b> - <p>for loop is used to execute a set of statement repeatedly until a particular condition is satisfied. we can say it an open ended loop. General format is,</p><p>for(initialization; condition; increment/decrement)</p><p>{</p><p>    statement-block;</p><p>}</p><p>In for loop we have exactly two semicolons, one after initialization and second after condition. In this loop we can have more than one initialization or increment/decrement, separated using comma operator. for loop can have only one condition.</p>",
+			"<b>Nested for loop</b> - <p>We can also have nested for loop, i.e one for loop inside another for loop. Basic syntax is,</p><p>for(initialization; condition; increment/decrement)</p><p>{</p><p>    for(initialization; condition; increment/decrement)</p><p>    {</p><p>        statement;</p><p>    }</p><p>}</p>",
+			"<b>do...while loop</b> - <p>In some situations it is necessary to execute body of the loop before testing the condition. Such situations can be handled with the help of do-while loop. do statement evaluates the body of the loop first and at the end, the condition is checked using while statement. General format of do-while loop is,</p><p>do</p><p>{</p><p>    // a couple of statements</p><p>}</p><p>while(condition);</p>",
+			"<b>Jumping out of a loop</b> - <p>Sometimes, while executing a loop, it becomes necessary to skip a part of the loop or to leave the loop as soon as certain condition becocmes true, that is jump out of loop. C language allows jumping from one statement to another within a loop as well as jumping out of the loop.</p><p><b>1. break statement</b></p><p>When break statement is encountered inside a loop, the loop is immediately exited and the program continues with the statement immediately following the loop.</p><p><b>2. continue statement</b></p><p>It causes the control to go directly to the test-condition and then continue the loop process. On encountering continue, cursor leave the current cycle of loop, and starts with the next cycle.</p>"
+			]
+      },
+	  {
+         "id":"10",
+         "nameOfTopic":"Storage Classes in C++",
+         "noOfLike":0,
+         "noOfDisLike":0,
+         "description":[
+            "Storage classes are used to specify the lifetime and scope of variables. How storage is allocated for variables and How variable is treated by complier depends on these storage classes."
+         ],
+         "imageUrl":"concept-10.jpg",
+         "content":[
+			"These are basically divided into 5 different types:- <p>1. Global variables</p><p>2. Local variables</p><p>3. Register variables</p><p>4. Static variables</p><p>5. Extern variables</p>",
+			"<b>Global Variables</b> - <p>These are defined at the starting , before all function bodies and are available throughout the program.</p><p>using namespace std;</p><p>int globe;      // Global variable</p><p>void func();</p><p>int main()</p><p>{</p><p>   .....  </p><p>}</p>",
+			"<b>Local variables</b> - <p>They are defined and are available within a particular scope. They are also called Automatic variable because they come into being when scope is entered and automatically go away when the scope ends.</p><p>The keyword auto is used, but by default all local variables are auto, so we don't have to explicitly add keyword auto before variable dedaration. Default value of such variable is garbage.</p>",
+			"<b>Register variables</b> - <p>This is also a type of local variable. This keyword is used to tell the compiler to make access to this variable as fast as possible. Variables are stored in registers to increase the access speed.</p><p>But you can never use or compute address of register variable and also , a register variable can be declared only within a block, that means, you cannot have global or static register variables.</p>",
+			"<b>Static Variables</b> - <p>Static variables are the variables which are initialized & allocated storage only once at the beginning of program execution, no matter how many times they are used and called in the program.</p>",
+			"<b>Extern Variables</b> - <p>This keyword is used to access variable in a file which is declared & defined in some other file, that is the existence of a global variable in one file is declared using extern keyword in another file.</p>"
+			]
+      },
+	  {
+         "id":"11",
+         "nameOfTopic":"Functions in C++",
+         "noOfLike":0,
+         "noOfDisLike":0,
+         "description":[
+            "Functions are used to provide modularity to a program. Creating an application using function makes it easier to understand, edit, check errors etc."
+         ],
+         "imageUrl":"concept-11.jpg",
+         "content":[
+			"<b>Basic Syntax for using Functions in C++</b> - <p>Here is how you define a function in C++,</p><p>return-type function-name(parameter1, parameter2, ...)</p><p>{</p><p>    // function-body</p><p>}</p><p>* <b>return-type:</b> suggests what the function will return. It can be int, char, some pointer or even a class object. There can be functions which does not return anything, they are mentioned with <b>void.</b></p><p>* <b>Function Name:</b> is the name of the function, using the function name it is called.</p><p>* <b>Parameters:</b> are variables to hold values of arguments passed while function is called. A function may or may not contain parameter list.</p><p>// function for adding two values</p><p>void sum(int x, int y)</p><p>{</p><p>    int z;</p><p>    z = x + y;</p><p>    cout << z;</p><p>}</p><p></p><p>int main()</p><p>{</p><p>    int a = 10;</p><p>    int b = 20;</p><p>    // calling the function with name 'sum'</p><p>    sum (a, b);</p><p>}</p><p>Here, a and b are two variables which are sent as arguments to the function sum, and x and y are parameters which will hold values of a and b to perform the required operation inside the function.</p><p>* <b>Function body:</b> is the part where the code statements are written.</p>",
+			"<b>Declaring, Defining and Calling a Function</b> - <p>Function declaration, is done to tell the compiler about the existence of the function. Function's return type, its name & parameter list is mentioned. Function body is written in its definition. Lets understand this with help of an example.</p><p>#include < iostream></p><p>using namespace std;</p><p></p><p>//declaring the function</p><p>int sum (int x, int y);</p><p></p><p>int main()</p><p>{</p><p>    int a = 10;</p><p>    int b = 20;</p><p>    int c = sum (a, b);    //calling the function</p><p>    cout << c;</p><p>}</p><p></p><p>//defining the function</p><p>int sum (int x, int y)</p><p>{</p><p>    return (x + y);</p><p>}</p><p>Here, initially the function is declared, without body. Then inside main() function it is called, as the function returns sumation of two values, and variable c is there to store the result. Then, at last, function is defined, where the body of function is specified. We can also, declare & define the function together, but then it should be done before it is called.</p>",
+			"<b>Calling a Function</b> - <p>Functions are called by their names. If the function is without argument, it can be called directly using its name. But for functions with arguments, we have two ways to call them,</p><p>1. Call by Value</p><p>2. Call by Reference</p><p><b>Call by Value</b> => </p><p>In this calling technique we pass the values of arguments which are stored or copied into the formal parameters of functions. Hence, the original values are unchanged only the parameters inside function changes.</p><p></p><p>void calc(int x);</p><p></p><p>int main()</p><p>{</p><p>    int x = 10;</p><p>    calc(x);</p><p>    printf(\"%d\", x);</p><p>}</p><p>void calc(int x)</p><p>{</p><p>    x = x + 10 ;</p><p>}</p><p></p><p>Output :-</p><p>10</p><p>In this case the actual variable x is not changed, because we pass argument by value, hence a copy of x is passed, which is changed, and that copied value is destroyed as the function ends(goes out of scope). So the variable x inside main() still has a value 10.</p><p>But we can change this program to modify the original x, by making the function calc() return a value, and storing that value in x.</p><p></p><p>void calc(int x);</p><p></p><p>int main()</p><p>{</p><p>    int x = 10;</p><p>    x = calc(x);</p><p>    printf(\"%d\", x);</p><p>}</p><p>void calc(int x)</p><p>{</p><p>    x = x + 10 ;</p><p>}</p><p></p><p>Output :-</p><p>20</p><p></p><p><b>Call by Reference</b> => </p><p>In this we pass the address of the variable as arguments. In this case the formal parameter can be taken as a reference or a pointer, in both the case they will change the values of the original variable.</p><p></p><p>void calc(int *p);</p><p></p><p>int main()</p><p>{</p><p>    int x = 10;</p><p>    calc(&x);     // passing address of x as argument</p><p>    printf(\"%d\", x);</p><p>}</p><p></p><p>void calc(int *p)</p><p>{</p><p>    *p = *p + 10;</p><p>}</p><p>Output :-</p><p>20</p>"
+			]
       }
    ],
    "programs":[
