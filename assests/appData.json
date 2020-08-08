@@ -84,7 +84,7 @@
          "imageUrl":"concept-2.jpg",
          "content":[
             "<b>Basic types of Variables</b> - <p>Each variable while declaration must be given a datatype, on which the memory assigned to the variable depends. Following are the basic types of variables,</p><p><b>bool</b> => For variable to store boolean values( True or False )</p><p><b>char</b> => For variables to store character types.</p><p><b>int</b> => for variable with integral values.for variable with integral values</p><p><b>float & double</b> =>  Are also types for variables with large and floating point values.</p>",
-            "<b>Declaration and Initialization</b> - Variable must be declared before they are used. Usually it is preferred to declare them at the starting of the program, but in C++ they can be declared in the middle of program too, but must be done before using them.<p style=\"color: #00FF00;\"><p>int i;      // declared but not initialised</p><p>char c;</p><p>int i, j, k;  // Multiple declaration</p></p>",
+            "<b>Declaration and Initialization</b> - Variable must be declared before they are used. Usually it is preferred to declare them at the starting of the program, but in C++ they can be declared in the middle of program too, but must be done before using them.<p class=\"cProgram\"><p>int i;      // declared but not initialised</p><p>char c;</p><p>int i, j, k;  // Multiple declaration</p></p>",
             "<b>Basic types of Variables</b> - ",
             "<b>Basic types of Variables</b> - ",
             "<b>Basic types of Variables</b> - ",
