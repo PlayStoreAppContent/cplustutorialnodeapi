@@ -53,6 +53,25 @@
             "<b>Comments</b> - For single line comments, use // before mentioning comment. For multiple line comment, enclose the comment between /* and */",
             "<b>Creating Classes in C++</b> - <p>Classes name must start with capital letter, and they contain data variables and member functions.</p><p>Once a class is defined, then its object is created and the member functions are used.</p><p>Variables can be declared anywhere in the entire program, but must be declared, before they are used. Hence, we don't need to declare variable at the start of the program.</p><p>Don't worry this is just to give you a basic idea about C++ language, we will cover everything in details in next tutorials.</p>"
          ]
+      },
+      {
+         "id":"4",
+         "nameOfTopic":"Datatypes and Modifiers in C++",
+         "noOfLike":0,
+         "noOfDisLike":0,
+         "description":[
+            "Datatypes and Modifiers in C++ are used to define type of variables and contents used."
+         ],
+         "imageUrl":"concept-2.jpg",
+         "content":[
+            "ata types define the way you use storage in the programs you write. Data types can be of two types: <p>1. Built-in Datatypes.</p><p>2. User-defined or Abstract Datatypes.</p>",
+            "<b>Built-in Data Types</b> - These are the datatypes which are predefined and are wired directly into the compiler. For eg: int, char etc.",
+            "<b>User defined or Abstract data types</b> - These are the type, that user creates as a class or a structure. In C++ these are classes where as in C language user-defined datatypes were implemented as structures.",
+            "<b>Basic Built in Datatypes in C++</b> - <p><tr><td>char</td><td>for character storage (1 byte)</td></tr><tr><td>int</td><td>for integral number (2 bytes)</td></tr><tr><td>float</td><td>single precision floating point (4 bytes)</td></tr><tr><td>double</td><td>double precision floating point numbers (8 bytes)</td></tr></p>",
+            "<b>Other Built in Datatypes in C++</b> - <p><tr><td>bool</td><td>Boolean(TrueorFalse)</td></tr><tr><td>void</td><td>WithoutanyValue</td></tr><tr><td>wchar_t</td><td>WideCharacter</td></tr></p>",
+            "<b>Enum as Datatype in C++</b> - Enumerated type declares a new type-name along with a sequence of values containing identifiers which has values starting from 0 and incrementing by 1 every time.",
+            "<b>Modifiers in C++</b> - <p>In C++, special words(called modifiers) can be used to modify the meaning of the predefined built-in data types and expand them to a much larger set. There are four datatype modifiers in C++, they are:</p><p>1. long</p><p>2. short</p><p>3. signed</p><p>4. unsigned</p><p>* The above mentioned modifiers can be used along with built in datatypes to make them more precise and even expand their range.</p><p>* Below mentioned are some important points you must know about the modifiers :-</p><p>* <b>long</b> and <b>short</b> modify the maximum and minimum values that a data type will hold.</p><p>* A plain int must have a minimum size of <b>short.</b></p><p>* Size hierarchy : short int < int < long int</p><p>* Size hierarchy for floating point numbers is : float < double < long double</p><p>* long float is not a legal type and there are no <b>short floating point</b> numbers.</p><p>* <b>Signed</b> types includes both positive and negative numbers and is the default type.</p><p>* <b>Unsigned,</b> numbers are always without any sign, that is always positive.</p>"
+         ]
       }
    ],
    "programs":[
