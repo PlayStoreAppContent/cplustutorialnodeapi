@@ -90,6 +90,28 @@
             "<b>Local Variables</b> - Local variables are the variables which exist only between the curly braces, in which its declared. Outside that they are unavailable and leads to compile time error.<p>Example :</p><p>#include <iostream></p><p>using namespace std;</p><p>int main()</p><p>{</p><p>    int i=10;</p><p>    if(i<20)        // if condition scope starts</p><p>    {</p><p>        int n=100;   // Local variable declared and initialized</p><p>    }              // if condition scope ends</p><p>    cout << n;      // Compile time error, n not available here</p><p>}</p>",
             "<b>Some special types of variable</b> - There are also some special keywords, to impart unique characteristics to the variables in the program. Following two are mostly used, we will discuss them in details later.<p>1. Final - Once initialized, its value cant be changed.</p><p>2. Static - These variables holds their value between function calls.</p><p>Example :</p><p>#include <iostream.h></p><p>using namespace std;</p><p>int main()</p><p>{</p><p>    final int i=10;</p><p>    static int y=20;</p><p>}</p>"
          ]
+      },
+      {
+         "id":"6",
+         "nameOfTopic":"Operators in C++",
+         "noOfLike":0,
+         "noOfDisLike":0,
+         "description":[
+            "Operators are special type of functions, that takes one or more arguments and produces a new value. For example : addition (+), substraction (-), multiplication (*) etc, are all operators. Operators are used to perform various operations on variables and constants."
+         ],
+         "imageUrl":"concept-2.jpg",
+         "content":[
+            "Types of operators are as follows :- <p>1. Assignment Operator</p><p>2. Mathematical Operators</p><p>3. Relational Operators</p><p>4. Logical Operators</p><p>5. Bitwise Operators</p><p>6. Shift Operators</p><p>7. Unary Operators</p><p>8. Ternary Operator</p><p>9. Comma Operator</p>",
+            "<b>Assignment Operator (=)</b> - Operates '=' is used for assignment, it takes the right-hand side (called rvalue) and copy it into the left-hand side (called lvalue). Assignment operator is the only operator which can be overloaded but cannot be inherited.",
+            "<b>Mathematical Operators</b> - There are operators used to perform basic mathematical operations. Addition (+) , subtraction (-) , diversion (/) multiplication (*) and modulus (%) are the basic mathematical operators. Modulus operator cannot be used with floating-point numbers.",
+            "<b>Relational Operators</b> - These operators establish a relationship between operands. The relational operators are : less than (<) , grater thatn (>) , less than or equal to (<=), greater than equal to (>=), equivalent (==) and not equivalent (!=).",
+            "<b>Logical Operators</b> - <p>The logical operators are AND (&&) and OR (||). They are used to combine two different expressions together.</p><p>If two statement are connected using AND operator, the validity of both statements will be considered, but if they are connected using OR operator, then either one of them must be valid. These operators are mostly used in loops (especially while loop) and in Decision making.</p>",
+            "<b>Bitwise Operators</b> - <p>There are used to change individual bits into a number. They work with only integral data types like char, int and long and not with floating point values.</p><p>* Bitwise AND operators &</p><p>* Bitwise OR operator |</p><p>* And bitwise XOR operator ^</p><p>* And, bitwise NOT operator ~</p><p>They can be used as shorthand notation too, & = , |= , ^= , ~= etc.</p>",
+            "<b>Shift Operators</b> - <p>Shift Operators are used to shift Bits of any variable. It is of three types,</p><p>1. Left Shift Operator <<</p><p>2. Right Shift Operator >></p><p>3. Unsigned Right Shift Operator >>></p>",
+            "<b>Unary Operators</b> - <p>These are the operators which work on only one operand. There are many unary operators, but increment ++ and decrement -- operators are most used.</p><p>Other Unary Operators : address of &, dereference *, new and delete, bitwise not ~, logical not !, unary minus - and unary plus +.</p>",
+            "<b>Ternary Operator</b> - The ternary if-else ? : is an operator which has three operands.",
+            "<b>Comma Operator</b> - This is used to separate variable names and to separate expressions. In case of expressions, the value of last expression is produced and used."
+         ]
       }
    ],
    "programs":[
