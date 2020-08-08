@@ -34,6 +34,25 @@
          "content":[
             "<b>Class</b> - Here we can take Human Being as a class. A class is a blueprint for any functional entity which defines its properties and its functions. Like Human Being, having body parts, and performing various actions."
          ]
+      },
+      {
+         "id":"3",
+         "nameOfTopic":"Basic Concepts of C++",
+         "noOfLike":0,
+         "noOfDisLike":0,
+         "description":[
+            "In this section we will cover the basics of C++, it will include the syntax, variable, operators, loop types, pointers, references and information about other requirements of a C++ program."
+         ],
+         "imageUrl":"concept-2.jpg",
+         "content":[
+            "The syntax and structure of C++ program are :- ",
+            "<b>Header files</b> - They are included at the beginning just like in C program. Here iostream is a header file which provides us with input & output streams. Header files contained predeclared function libraries, which can be used by users for their ease.",
+            "<b>Using namespace std,</b> - tells the compiler to use standard namespace. Namespace collects identifiers used for class, object and variables. NameSpace can be used by two ways in a program, either by the use of using statement at the beginning, like we did in above mentioned program or by using name of namespace as prefix before the identifier with scope resolution (::) operator.",
+            "<b>main(),</b> - is the function which holds the executing part of program its return type is int.",
+            "<b>cin & cout</b> - cout <<, is used to print anything on screen, same as printf in C language. cin and cout are same as scanf and printf, only difference is that you do not need to mention format specifiers like, %d for int etc, in cout & cin.",
+            "<b>Comments</b> - For single line comments, use // before mentioning comment. For multiple line comment, enclose the comment between /* and */",
+            "<b>Creating Classes in C++</b> - <p>Classes name must start with capital letter, and they contain data variables and member functions.</p><p>Once a class is defined, then its object is created and the member functions are used.</p><p>Variables can be declared anywhere in the entire program, but must be declared, before they are used. Hence, we don't need to declare variable at the start of the program.</p><p>Don't worry this is just to give you a basic idea about C++ language, we will cover everything in details in next tutorials.</p>"
+         ]
       }
    ],
    "programs":[
