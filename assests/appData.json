@@ -112,6 +112,39 @@
             "<b>Ternary Operator</b> - The ternary if-else ? : is an operator which has three operands.",
             "<b>Comma Operator</b> - This is used to separate variable names and to separate expressions. In case of expressions, the value of last expression is produced and used."
          ]
+      },
+      {
+         "id":"7",
+         "nameOfTopic":"sizeof and typedef Operators in C++",
+         "noOfLike":0,
+         "noOfDisLike":0,
+         "description":[
+            "In this tutorial we will cover the usage of sizeof and typedef operators in C++."
+         ],
+         "imageUrl":"concept-2.jpg",
+         "content":[
+            "<b>sizeof Operator in C++</b> - <p>sizeof is also an operator not a function, it is used to get information about the amount of memory allocated for data types & Objects. It can be used to get size of user defined data types too.</p><p>sizeof operator can be used with and without parentheses. If you apply it to a variable you can use it without parentheses.</p><p>cout << sizeof(double);   //Will print size of double</p><p>int x = 2;</p><p>int i = sizeof x;</p>",
+            "<b>typedef Operator in C++</b> - <p>typedef is a keyword used in C language to assign alternative names to existing types. Its mostly used with user defined data types, when names of data types get slightly complicated. Following is the general syntax for using typedef,</p><p>typedef existing_name alias_name</p><p>Lets take an example and see how typedef actually works.</p><p>typedef unsigned long ulong;</p><p>The above statement define a term ulong for an unsigned long type. Now this ulong identifier can be used to define unsigned long type variables.</p><p>ulong i, j;</p>"
+         ]
+      },
+      {
+         "id":"8",
+         "nameOfTopic":"Decision making in C++ - if, else and else if in C++",
+         "noOfLike":0,
+         "noOfDisLike":0,
+         "description":[
+            "Decision making is about deciding the order of execution of statements based on certain conditions or repeat a group of statements until certain specified conditions are met."
+         ],
+         "imageUrl":"concept-2.jpg",
+         "content":[
+            "C++ handles decision-making by supporting the following statements.<p>* if statement</p><p>* switch statement</p><p>* conditional operator statement</p><p>* goto statement</p>",
+            "<b>Decision making with if statement</b> - <p>The if statement may be implemented in different forms depending on the complexity of conditions to be tested. The different forms are,</p><p>1. Simple if statement</p><p>2. if....else statement</p><p>3. Nested if....else statement</p><p>4. else if statement</p>",
+            "<b>Simple if statement</b> - <p>The general form of a simple if statement is,</p><p>if(expression)</p><p>{</p><p>    statement-inside;</p><p>}</p><p>    statement-outside;</p><p>If the expression is true, then 'statement-inside' will be executed, otherwise 'statement-inside' is skipped and only 'statement-outside' will be executed.</p><p>Example:</p><p>#include< iostream.h></p><p>int main( )</p><p>{</p><p>    int x,y;</p><p>    x=15;</p><p>    y=13;</p><p>    if (x > y )</p><p>    {</p><p>        cout << \"x is greater than y\";</p><p>    }</p><p>}</p><p>Output</p><p>x is greater than y</p>",
+            "<b>if...else statement</b> - <p>The general form of a simple if...else statement is,</p><p>if(expression)</p><p>{</p><p>    statement-block1;</p><p>}</p><p>else</p><p>{</p><p></p><p>    statement-block2;</p><p>}</p><p>If the 'expression' is true or returns true, then the 'statement-block1' will get executed, else 'statement-block1' will be skipped and 'statement-block2' will be executed.</p><p>Example:</p><p>void main( )</p><p>{</p><p>    int x,y;</p><p>    x=15;</p><p>    y=18;</p><p>    if (x > y )</p><p>    {</p><p>        cout << \"x is greater than y\";</p><p>    }</p><p>    else</p><p>    {</p><p>        cout << \"y is greater than x\";</p><p>    }</p><p>}</p><p>Output :-</p><p>y is greater than x</p>",
+            "<b>Nested if....else statement</b> - <p>The general form of a nested if...else statement is,</p><p>if(expression)</p><p>{</p><p>    if(expression1)</p><p>    {</p><p>        statement-block1;</p><p>    }</p><p>    else </p><p>    {</p><p>        statement-block2;</p><p>    }</p><p>}</p><p>else</p><p>{</p><p>    statement-block3;</p><p>}</p><p>if 'expression' is false or returns false, then the 'statement-block3' will be executed, otherwise execution will enter the if condition and check for 'expression 1'. Then if the 'expression 1' is true or returns true, then the 'statement-block1' will be executed otherwise 'statement-block2' will be executed.</p><p>Example:</p><p>void main( )</p><p>{</p><p>    int a,b,c;</p><p>    cout << \"enter 3 number\";</p><p>    cin >> a >> b >> c;</p><p>    if(a > b)</p><p>    {</p><p>        if( a > c)</p>",
+            "<b>else-if Ladder</b> - <p>The general form of else-if ladder is,</p><p>if(expression 1)</p><p>{</p><p>    statement-block1;</p><p>}</p><p>else if(expression 2) </p><p>{</p><p>    statement-block2;</p><p>}</p><p>else if(expression 3 ) </p><p>{</p><p>    statement-block3;</p><p>}</p><p>else </p><p>    default-statement;</p><p>The expression is tested from the top(of the ladder) downwards. As soon as the true condition is found, the statement associated with it is executed.</p><p>Example:</p><p>void main( )</p><p>{</p><p>    int a;</p><p>    cout << \"enter a number\";</p><p>    cin >> a;</p><p>    if( a%5==0 && a%8==0)</p><p>    {</p><p>        cout << \"divisible by both 5 and 8\";</p><p>    }</p><p>    else if( a%8==0 )</p><p>    {</p><p>        cout << \"divisible by 8\";</p><p>    }</p><p>    else if(a%5==0)</p><p>    {</p><p>        cout << \"divisible by 5\";</p><p>    }</p><p>    else </p><p>    {</p><p>        cout << \"divisible by none\";</p><p>    }</p><p>}</p><p>If you enter value 40 for the variable a, then the output will be:</p><p>Output :-</p><p>divisible by both 5 and 8</p>",
+            "<b>Points to Remember</b> - <p>1. In if statement, a single statement can be included without enclosing it into curly braces { }.</p><p>int a = 5;</p><p>if(a > 4)</p><p>    cout << \"success\";</p><p>Output :-</p><p>success</p><p>No curly braces are required in the above case, but if we have more than one statement inside if condition, then we must enclose them inside curly braces otherwise only the first statement after the if condition will be considered.</p><p>int a = 2;</p><p>if(a > 4)</p><p>    cout << \"success\";</p><p>    // below statement is outside the if condition</p><p>    cout << \"Not inside the if condition\"</p><p>Output :-</p><p>Not inside the if condition</p><p>2. == must be used for comparison in the expression of if condition, if you use = the expression will always return true, because it performs assignment not comparison.</p><p>3. Other than 0(zero), all other positive numeric values are considered as true.</p><p>if(27)</p><p>cout << \"hello\";</p><p>hello</p>"
+         ]
       }
    ],
    "programs":[
