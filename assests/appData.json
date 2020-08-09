@@ -121,7 +121,7 @@
          "description":[
             "In this tutorial we will cover the usage of sizeof and typedef operators in C++."
          ],
-         "imageUrl":"concept-7.jpg",
+         "imageUrl":null,
          "content":[
             "<b>sizeof Operator in C++</b> - <p>sizeof is also an operator not a function, it is used to get information about the amount of memory allocated for data types & Objects. It can be used to get size of user defined data types too.</p><p>sizeof operator can be used with and without parentheses. If you apply it to a variable you can use it without parentheses.</p><p>cout << sizeof(double);   //Will print size of double</p><p>int x = 2;</p><p>int i = sizeof x;</p>",
             "<b>typedef Operator in C++</b> - <p>typedef is a keyword used in C language to assign alternative names to existing types. Its mostly used with user defined data types, when names of data types get slightly complicated. Following is the general syntax for using typedef,</p><p>typedef existing_name alias_name</p><p>Lets take an example and see how typedef actually works.</p><p>typedef unsigned long ulong;</p><p>The above statement define a term ulong for an unsigned long type. Now this ulong identifier can be used to define unsigned long type variables.</p><p>ulong i, j;</p>"
